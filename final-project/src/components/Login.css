@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.login-root {
+    min-height: 100vh;
+    background: #0D1117;
+    color: #F0F6FC;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    overflow: hidden;
+}
+
+.login-bg-grid {
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.login-card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 380px;
+    background: #161B22;
+    border: 1px solid #21262D;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-decoration: none;
+    color: #F0F6FC;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+.login-logo-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4d67c3, #7c3aed);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.login-brand-accent { color: #7c3aed; }
+
+.login-tabs {
+    display: flex;
+    background: #0D1117;
+    border: 1px solid #21262D;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+.login-tab {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    background: transparent;
+    color: #8B949E;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.login-tab.active {
+    background: #4d67c3;
+    color: #fff;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.login-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.login-field label {
+    font-size: 13px;
+    color: #8B949E;
+    font-weight: 500;
+}
+.login-field input {
+    background: #0D1117;
+    border: 1px solid #21262D;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: #F0F6FC;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+.login-field input:focus { border-color: #4d67c3; }
+
+.login-btn-primary {
+    margin-top: 6px;
+    padding: 11px 0;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4d67c3, #7c3aed);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+.login-btn-primary:disabled { opacity: 0.6; cursor: default; }
+.login-btn-primary:not(:disabled):hover { opacity: 0.92; }
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #8B949E;
+    font-size: 12px;
+    margin: 20px 0 16px;
+}
+.login-divider::before, .login-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #21262D;
+}
+.login-divider span { padding: 0 10px; }
+
+.login-btn-google {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #21262D;
+    border-radius: 8px;
+    background: #0D1117;
+    color: #F0F6FC;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+.login-btn-google:disabled { opacity: 0.6; cursor: default; }
+.login-btn-google:not(:disabled):hover { border-color: #4d67c3; }
